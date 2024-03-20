@@ -1,0 +1,55 @@
+@startuml
+
+skin rose
+
+entity "Person" as per {
+  * ID | int
+  --
+  * firstname | varchar(255)
+  * lastname | varchar(255)
+}
+
+entity "Role" as rol {
+  * ID | int
+  --
+  * Name | varchar(255)
+  * bonusmultiplier | float
+}
+
+entity "PersonRole" as pro {
+  * ID | int
+  --
+  * ID_person | int
+  * ID_role | int
+}
+
+entity "Team" as tem {
+  * ID | int
+  --
+  * Name | varchar(255)
+}
+
+entity "PersonTeam" as pte {
+  * ID | int
+  --
+  * ID_person | int
+  * ID_team | int
+}
+
+entity "Project" as proj {
+  * ID | int
+  --
+  * Name | varchar(255)
+  * start_date | datetime
+  * end_date | datetime
+  * bonus | float
+  * ID_team | int
+}
+
+per "n"--"1" pro
+rol "n"--"1" pro
+per "n"--"1" pte
+tem "n"--"1" pte
+tem "1"--"n" proj
+
+@enduml
