@@ -1,0 +1,17 @@
+{
+    "name": "lepuschitz/lap",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Lepuschitz\\Lap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Armin Lepuschitz"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^5.3"
+    }
+}
