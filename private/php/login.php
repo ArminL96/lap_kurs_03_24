@@ -9,10 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($_POST["username"] === $dummy_username && $_POST["password"] === $dummy_password) {
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $_POST["username"];
-            header("location: ../../index.php");
+            echo "success";
             exit;
         } else {
-            header("location: ../../index.php");
+            echo "error";
             exit;
         }
     }
