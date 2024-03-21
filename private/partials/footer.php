@@ -9,6 +9,5 @@
     <p class="text-center text-white">© Armin Lepuschitz</p>
   </div>
 
-  <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="public/js/custom.js"></script>
 </footer>

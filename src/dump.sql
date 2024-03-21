@@ -186,3 +186,6 @@ FROM person
 LEFT JOIN personteam ON person.ID = personteam.ID_person
 AND
 LEFT JOIN personteam ON team.ID = personteam.ID_team
+
+
+SELECT person.firstname, person.lastname, team.name AS team_name,COALESCE(SUM(project.bonus), 0) AS total_bonus FROM person LEFT JOIN personteam ON person.ID = personteam.ID_person LEFT JOIN team ON personteam.ID_team = team.ID LEFT JOIN project ON team.ID = project.ID_team GROUP BY person.ID, team.ID;

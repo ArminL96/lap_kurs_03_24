@@ -11,13 +11,17 @@
         <title>LAP_Kurs</title>
         <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/scss/_custom.scss" rel="stylesheet">
+        <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <?php require_once('private/partials/header.php'); ?>
         
-        <div class="container">
+        <div class="container-fluid main-content">
 
-           <?php require_once('private/partials/tables/person.php'); ?>
+           <?php require_once('private/partials/tables/leader.php'); ?>
+           <?php require_once('private/partials/tables/member.php'); ?>
+           <?php require_once('private/partials/tables/team.php'); ?>
 
         </div>
 

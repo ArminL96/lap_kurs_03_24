@@ -8,7 +8,7 @@
     if(!empty($person)) { ?>
         <div class="container container-tables">
         <div class="table-container">
-        <h2>People</h2>
+        <h2>Role - Leader</h2>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
