@@ -1,0 +1,27 @@
+product
+id -
+name -
+category -
+price -
+stock -
+
+category
+
+user
+id - auto inc unq
+username - varchar(255) (unique)
+firstname - varchar(255)
+lastname - varchar(255)
+ID_role - int fkey--user_role
+
+user_role
+id 
+name (user, admin)
+level
+
+order
+id
+user
+
+
+shopping_cart
